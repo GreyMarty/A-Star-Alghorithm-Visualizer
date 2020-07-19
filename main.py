@@ -15,7 +15,7 @@ visualizer_area.pack(side="bottom", fill="both", expand=1)
 visualizer = Visualizer(77, 60, pathfinder=AStarSearch, cell_size=9, master=visualizer_area)
 visualizer.pack()
 
-panel = Panel({"Clear": visualizer.clear, "Build Path": lambda: visualizer.build_path()}, master=root, height=30)
+panel = Panel({"Clear": visualizer.clear, "Build Path": visualizer.build_path}, master=root, height=30)
 panel.pack()
 
 root.mainloop()
